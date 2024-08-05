@@ -1,6 +1,6 @@
 # Timer Lord of The Rings 
 
-Para acessar o timer, visite o link: ![Lord of The Rings Timer](https://cristinasstemmer.github.io/TimerLOR/)
+Para acessar o timer, visite o link: https://cristinasstemmer.github.io/TimerLOR/
 
 Um timer inspirado na icônica série "Senhor dos Anéis". Este projeto foi criado para cronometrar o tempo de uma maneira visualmente atraente e funcional.
 
