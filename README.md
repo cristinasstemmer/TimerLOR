@@ -10,7 +10,7 @@ Para acessar o timer, visite o link: https://cristinasstemmer.github.io/TimerLOR
 - Interface intuitiva e responsiva;
 - Visual temático baseado no Senhor dos Anéis;
 - Efeito sonoro ao final do timer;
-- Gradual preenchimento do círculo conforme o tempo passa.
+- Gradual esvaziamento do círculo conforme o tempo passa.
 
 ## Tecnologias Utilizadas
 
