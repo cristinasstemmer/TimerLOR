@@ -1,0 +1,202 @@
+@font-face {
+    font-family: 'Default';
+    src: url('./RINGM___.TTF') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Default';
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #BCA432;
+}
+
+body {
+    background-color: #131B06;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.image-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.background-image {
+    width: 90%;
+    height: auto;
+    z-index: 1;
+}
+
+.timer {
+    width: 475px;
+    height: 475px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quote {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #BCA432;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.controls input[type="text"] {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #BCA432;
+    border-radius: 5px;
+    width: 135px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.controls button {
+    background-color: #BCA432;
+    color: #131B06;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.controls button:hover {
+    background-color: #C19D61;
+}
+
+.base-timer {
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+.base-timer__svg {
+    transform: scaleX(-1);
+}
+
+.base-timer__circle {
+    fill: none;
+    stroke: none;
+}
+
+.base-timer__path-elapsed {
+    stroke-width: 3px;
+    stroke: grey;
+}
+
+.base-timer__path-remaining {
+    stroke-width: 3px;
+    stroke: #BCA432;
+    transition: 1s linear all;
+}
+
+.base-timer__label {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: inline;
+}
+
+@media (max-width: 768px) {
+    .clock {
+      width: 300px;
+      height: 300px;
+    }
+
+    .timer {
+        width: 300px;
+        height: 300px;
+    }
+
+    .base-timer {
+        width: 250px;
+        height: 250px;
+    }
+
+    .base-timer__label {
+        font-size: 36px;
+    }
+
+    .quote {
+        font-size: 1rem;
+        padding: 15px;
+    }
+
+    .controls button {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .clock {
+      width: 200px;
+      height: 200px;
+    }
+
+    .timer {
+        width: 200px;
+        height: 200px;
+    }
+
+    .base-timer {
+        width: 150px;
+        height: 150px;
+    }
+
+    .base-timer__label {
+        font-size: 24px;
+    }
+
+    .quote {
+        font-size: 0.8rem;
+        padding: 10px;
+    }
+
+    .controls input[type="text"], .controls button {
+        width: 80px;
+        font-size: 0.8rem;
+    }
+}

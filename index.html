@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temporizador LOR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="image-container">
+        <img src="LOR.png" alt="Background Image" class="background-image">
+        <div class="timer">
+            <div class="quote">Tudo o que temos a decidir é o que fazer com o tempo que nos é concedido - Gandalf</div>
+            <svg class="base-timer__svg hidden" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <g class="base-timer__circle">
+                    <circle class="base-timer__path-elapsed" cx="50" cy="50" r="45"></circle>
+                    <path
+                        id="base-timer-path-remaining"
+                        stroke-dasharray="283"
+                        class="base-timer__path-remaining green"
+                        d="
+                            M 50, 50
+                            m -45, 0
+                            a 45,45 0 1,0 90,0
+                            a 45,45 0 1,0 -90,0
+                        "
+                    ></path>
+                </g>
+            </svg>
+        </div>
+        <span id="base-timer-label" class="base-timer__label hidden">
+            00:00
+        </span>
+    </div>
+    <div class="controls">
+        <input type="text" id="time-input" placeholder="HH:MM:SS">
+        <div class="buttons">
+            <button id="start" onclick="startTimer()">Iniciar</button>
+            <button id="pause" onclick="pauseTimer()" class="hidden">Pausar</button>
+        </div>
+    </div>
+    <audio id="alarm-sound" src="hobbits.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
